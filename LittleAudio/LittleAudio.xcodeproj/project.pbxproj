@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAF1866925100E0E00D38E13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF1866825100E0E00D38E13 /* AppDelegate.swift */; };
+		FAF1866B25100E0E00D38E13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF1866A25100E0E00D38E13 /* SceneDelegate.swift */; };
+		FAF1866D25100E0E00D38E13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF1866C25100E0E00D38E13 /* ViewController.swift */; };
+		FAF1867025100E0E00D38E13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF1866E25100E0E00D38E13 /* Main.storyboard */; };
+		FAF1867225100E1000D38E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF1867125100E1000D38E13 /* Assets.xcassets */; };
+		FAF1867525100E1000D38E13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF1867325100E1000D38E13 /* LaunchScreen.storyboard */; };
+		FAF1868025100E1000D38E13 /* LittleAudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF1867F25100E1000D38E13 /* LittleAudioTests.swift */; };
+		FAF1868B25100E1000D38E13 /* LittleAudioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF1868A25100E1000D38E13 /* LittleAudioUITests.swift */; };
+		FAF186992510159D00D38E13 /* SignalSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF186982510159D00D38E13 /* SignalSource.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAF1867C25100E1000D38E13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAF1865D25100E0E00D38E13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAF1866425100E0E00D38E13;
+			remoteInfo = LittleAudio;
+		};
+		FAF1868725100E1000D38E13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAF1865D25100E0E00D38E13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAF1866425100E0E00D38E13;
+			remoteInfo = LittleAudio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAF1866525100E0E00D38E13 /* LittleAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF1866825100E0E00D38E13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAF1866A25100E0E00D38E13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FAF1866C25100E0E00D38E13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAF1866F25100E0E00D38E13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAF1867125100E1000D38E13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAF1867425100E1000D38E13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAF1867625100E1000D38E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF1867B25100E1000D38E13 /* LittleAudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LittleAudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF1867F25100E1000D38E13 /* LittleAudioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleAudioTests.swift; sourceTree = "<group>"; };
+		FAF1868125100E1000D38E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF1868625100E1000D38E13 /* LittleAudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LittleAudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF1868A25100E1000D38E13 /* LittleAudioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleAudioUITests.swift; sourceTree = "<group>"; };
+		FAF1868C25100E1000D38E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF186982510159D00D38E13 /* SignalSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalSource.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAF1866225100E0E00D38E13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF1867825100E1000D38E13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF1868325100E1000D38E13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAF1865C25100E0E00D38E13 = {
+			isa = PBXGroup;
+			children = (
+				FAF1866725100E0E00D38E13 /* LittleAudio */,
+				FAF1867E25100E1000D38E13 /* LittleAudioTests */,
+				FAF1868925100E1000D38E13 /* LittleAudioUITests */,
+				FAF1866625100E0E00D38E13 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAF1866625100E0E00D38E13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAF1866525100E0E00D38E13 /* LittleAudio.app */,
+				FAF1867B25100E1000D38E13 /* LittleAudioTests.xctest */,
+				FAF1868625100E1000D38E13 /* LittleAudioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAF1866725100E0E00D38E13 /* LittleAudio */ = {
+			isa = PBXGroup;
+			children = (
+				FAF1866825100E0E00D38E13 /* AppDelegate.swift */,
+				FAF1866A25100E0E00D38E13 /* SceneDelegate.swift */,
+				FAF1866C25100E0E00D38E13 /* ViewController.swift */,
+				FAF1866E25100E0E00D38E13 /* Main.storyboard */,
+				FAF1867125100E1000D38E13 /* Assets.xcassets */,
+				FAF1867325100E1000D38E13 /* LaunchScreen.storyboard */,
+				FAF1867625100E1000D38E13 /* Info.plist */,
+				FAF186982510159D00D38E13 /* SignalSource.swift */,
+			);
+			path = LittleAudio;
+			sourceTree = "<group>";
+		};
+		FAF1867E25100E1000D38E13 /* LittleAudioTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAF1867F25100E1000D38E13 /* LittleAudioTests.swift */,
+				FAF1868125100E1000D38E13 /* Info.plist */,
+			);
+			path = LittleAudioTests;
+			sourceTree = "<group>";
+		};
+		FAF1868925100E1000D38E13 /* LittleAudioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAF1868A25100E1000D38E13 /* LittleAudioUITests.swift */,
+				FAF1868C25100E1000D38E13 /* Info.plist */,
+			);
+			path = LittleAudioUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAF1866425100E0E00D38E13 /* LittleAudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF1868F25100E1000D38E13 /* Build configuration list for PBXNativeTarget "LittleAudio" */;
+			buildPhases = (
+				FAF1866125100E0E00D38E13 /* Sources */,
+				FAF1866225100E0E00D38E13 /* Frameworks */,
+				FAF1866325100E0E00D38E13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LittleAudio;
+			productName = LittleAudio;
+			productReference = FAF1866525100E0E00D38E13 /* LittleAudio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAF1867A25100E1000D38E13 /* LittleAudioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF1869225100E1000D38E13 /* Build configuration list for PBXNativeTarget "LittleAudioTests" */;
+			buildPhases = (
+				FAF1867725100E1000D38E13 /* Sources */,
+				FAF1867825100E1000D38E13 /* Frameworks */,
+				FAF1867925100E1000D38E13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAF1867D25100E1000D38E13 /* PBXTargetDependency */,
+			);
+			name = LittleAudioTests;
+			productName = LittleAudioTests;
+			productReference = FAF1867B25100E1000D38E13 /* LittleAudioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAF1868525100E1000D38E13 /* LittleAudioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF1869525100E1000D38E13 /* Build configuration list for PBXNativeTarget "LittleAudioUITests" */;
+			buildPhases = (
+				FAF1868225100E1000D38E13 /* Sources */,
+				FAF1868325100E1000D38E13 /* Frameworks */,
+				FAF1868425100E1000D38E13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAF1868825100E1000D38E13 /* PBXTargetDependency */,
+			);
+			name = LittleAudioUITests;
+			productName = LittleAudioUITests;
+			productReference = FAF1868625100E1000D38E13 /* LittleAudioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAF1865D25100E0E00D38E13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = MacBook;
+				TargetAttributes = {
+					FAF1866425100E0E00D38E13 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					FAF1867A25100E1000D38E13 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = FAF1866425100E0E00D38E13;
+					};
+					FAF1868525100E1000D38E13 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = FAF1866425100E0E00D38E13;
+					};
+				};
+			};
+			buildConfigurationList = FAF1866025100E0E00D38E13 /* Build configuration list for PBXProject "LittleAudio" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAF1865C25100E0E00D38E13;
+			productRefGroup = FAF1866625100E0E00D38E13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAF1866425100E0E00D38E13 /* LittleAudio */,
+				FAF1867A25100E1000D38E13 /* LittleAudioTests */,
+				FAF1868525100E1000D38E13 /* LittleAudioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAF1866325100E0E00D38E13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF1867525100E1000D38E13 /* LaunchScreen.storyboard in Resources */,
+				FAF1867225100E1000D38E13 /* Assets.xcassets in Resources */,
+				FAF1867025100E0E00D38E13 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF1867925100E1000D38E13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF1868425100E1000D38E13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAF1866125100E0E00D38E13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF1866D25100E0E00D38E13 /* ViewController.swift in Sources */,
+				FAF186992510159D00D38E13 /* SignalSource.swift in Sources */,
+				FAF1866925100E0E00D38E13 /* AppDelegate.swift in Sources */,
+				FAF1866B25100E0E00D38E13 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF1867725100E1000D38E13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF1868025100E1000D38E13 /* LittleAudioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF1868225100E1000D38E13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF1868B25100E1000D38E13 /* LittleAudioUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAF1867D25100E1000D38E13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAF1866425100E0E00D38E13 /* LittleAudio */;
+			targetProxy = FAF1867C25100E1000D38E13 /* PBXContainerItemProxy */;
+		};
+		FAF1868825100E1000D38E13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAF1866425100E0E00D38E13 /* LittleAudio */;
+			targetProxy = FAF1868725100E1000D38E13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAF1866E25100E0E00D38E13 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAF1866F25100E0E00D38E13 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAF1867325100E1000D38E13 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAF1867425100E1000D38E13 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAF1868D25100E1000D38E13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAF1868E25100E1000D38E13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAF1869025100E1000D38E13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S227NHU935;
+				INFOPLIST_FILE = LittleAudio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chudolab.LittleAudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAF1869125100E1000D38E13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S227NHU935;
+				INFOPLIST_FILE = LittleAudio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chudolab.LittleAudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAF1869325100E1000D38E13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S227NHU935;
+				INFOPLIST_FILE = LittleAudioTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chudolab.LittleAudioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LittleAudio.app/LittleAudio";
+			};
+			name = Debug;
+		};
+		FAF1869425100E1000D38E13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S227NHU935;
+				INFOPLIST_FILE = LittleAudioTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chudolab.LittleAudioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LittleAudio.app/LittleAudio";
+			};
+			name = Release;
+		};
+		FAF1869625100E1000D38E13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S227NHU935;
+				INFOPLIST_FILE = LittleAudioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chudolab.LittleAudioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LittleAudio;
+			};
+			name = Debug;
+		};
+		FAF1869725100E1000D38E13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S227NHU935;
+				INFOPLIST_FILE = LittleAudioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chudolab.LittleAudioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LittleAudio;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAF1866025100E0E00D38E13 /* Build configuration list for PBXProject "LittleAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF1868D25100E1000D38E13 /* Debug */,
+				FAF1868E25100E1000D38E13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF1868F25100E1000D38E13 /* Build configuration list for PBXNativeTarget "LittleAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF1869025100E1000D38E13 /* Debug */,
+				FAF1869125100E1000D38E13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF1869225100E1000D38E13 /* Build configuration list for PBXNativeTarget "LittleAudioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF1869325100E1000D38E13 /* Debug */,
+				FAF1869425100E1000D38E13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF1869525100E1000D38E13 /* Build configuration list for PBXNativeTarget "LittleAudioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF1869625100E1000D38E13 /* Debug */,
+				FAF1869725100E1000D38E13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAF1865D25100E0E00D38E13 /* Project object */;
+}
