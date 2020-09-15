@@ -27,7 +27,7 @@ class ViewController: UIViewController, VolumeProviderProtocol {
     func addIndicator() {
         self.signalSource.start()
 
-        energyIndicator = EnergyIndicator(frame: CGRect(x: 0, y: 0, width: 200, height: 50), volumeProvider: self)
+        energyIndicator = EnergyIndicator(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.width), volumeProvider: self)
 
         self.view.addSubview(energyIndicator!)
 

@@ -18,7 +18,7 @@ class EnergyIndicator: UIView{
     var isAnimating = false
 
     //TODO
-    //add beaming animation
+    var pulsingAnimation: PulsingAnimation?
     //add dynamic animation
   
     
@@ -29,6 +29,8 @@ class EnergyIndicator: UIView{
     @IBOutlet weak var icon: UIImageView!
     
     var volumeProvider: VolumeProviderProtocol?
+    //80 or 100
+    let PULSING_MULTIPLIER : CGFloat = 0.8
 
     // MARK: - inits
 
@@ -76,7 +78,7 @@ class EnergyIndicator: UIView{
         guard !isAnimating else { return }
         isAnimating = true
 
-        //start beaming
+        pulsingAnimation?.start()
         //start energy
     }
 
@@ -85,7 +87,15 @@ class EnergyIndicator: UIView{
     
     func setup(){
         //TODO
-        //setup small view
+        setUpPulsingView()
         //setup dynamic view
+    }
+    
+    private func setUpPulsingView() {
+        //        iconView.setShadow()
+        iconView.layer.cornerRadius = iconView.frame.size.width/2
+        iconView.clipsToBounds = false
+        iconView.backgroundColor = UIColor.blue
+        pulsingAnimation = PulsingAnimation.init(layer: iconView.layer, multiplier: PULSING_MULTIPLIER)
     }
 }

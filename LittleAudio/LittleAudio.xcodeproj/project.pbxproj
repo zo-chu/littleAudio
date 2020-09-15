@@ -18,6 +18,7 @@
 		FAF186992510159D00D38E13 /* SignalSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF186982510159D00D38E13 /* SignalSource.swift */; };
 		FAF1869B2511481E00D38E13 /* EnergyIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF1869A2511481E00D38E13 /* EnergyIndicator.swift */; };
 		FAF186A325114C5900D38E13 /* EnergyIndicator.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF186A225114C5900D38E13 /* EnergyIndicator.xib */; };
+		FAF186A52511610100D38E13 /* PulsingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF186A42511610100D38E13 /* PulsingAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		FAF186982510159D00D38E13 /* SignalSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalSource.swift; sourceTree = "<group>"; };
 		FAF1869A2511481E00D38E13 /* EnergyIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyIndicator.swift; sourceTree = "<group>"; };
 		FAF186A225114C5900D38E13 /* EnergyIndicator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnergyIndicator.xib; sourceTree = "<group>"; };
+		FAF186A42511610100D38E13 /* PulsingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsingAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				FAF186982510159D00D38E13 /* SignalSource.swift */,
 				FAF1869A2511481E00D38E13 /* EnergyIndicator.swift */,
 				FAF186A225114C5900D38E13 /* EnergyIndicator.xib */,
+				FAF186A42511610100D38E13 /* PulsingAnimation.swift */,
 			);
 			path = LittleAudio;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF1869B2511481E00D38E13 /* EnergyIndicator.swift in Sources */,
+				FAF186A52511610100D38E13 /* PulsingAnimation.swift in Sources */,
 				FAF1866D25100E0E00D38E13 /* ViewController.swift in Sources */,
 				FAF186992510159D00D38E13 /* SignalSource.swift in Sources */,
 				FAF1866925100E0E00D38E13 /* AppDelegate.swift in Sources */,
