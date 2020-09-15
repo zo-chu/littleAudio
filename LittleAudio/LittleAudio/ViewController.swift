@@ -10,14 +10,29 @@ import UIKit
 import AVFoundation
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, VolumeProviderProtocol {
+    
     let signalSource: SignalSource = SignalSource()
+    var energyIndicator: EnergyIndicator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         askForRecordingPermission()
-        
+    }
+    
+    func getCurrentEnergy() -> CGFloat {
+        return signalSource.getEnergyPercent()
+    }
+    
+    func addIndicator() {
+        self.signalSource.start()
+
+        energyIndicator = EnergyIndicator(frame: CGRect(x: 0, y: 0, width: 200, height: 50), volumeProvider: self)
+
+        self.view.addSubview(energyIndicator!)
+
+        energyIndicator!.setup()
+        energyIndicator!.startAnimating()
     }
     
     func askForRecordingPermission() {
@@ -34,7 +49,7 @@ class ViewController: UIViewController {
                         print("Couldn't set  AVAudioSession category")
                         return
                     }
-                    self.signalSource.start()
+                    self.addIndicator()
                 } else{
                     print("permission not granted")
                 }

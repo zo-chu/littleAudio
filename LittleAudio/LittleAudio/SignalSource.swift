@@ -9,22 +9,26 @@
 import Foundation
 import AVFoundation
 
+
 class SignalSource: NSObject, AVAudioRecorderDelegate {
-    
     var recorder: AVAudioRecorder = AVAudioRecorder()
     
     func start() {
         startRecording()
     }
-    func stop() {
+
+    func getEnergyPercent() -> CGFloat {
+        let result = CGFloat(recorder.averagePower(forChannel: 0))
+        return (pow (10, (0.05 * result)))
         
     }
-    func getDocumentsDirectory() -> URL {
+    
+    private func getDocumentsDirectory() -> URL {
            let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
            return paths[0]
     }
        
-   func startRecording() {
+   private func startRecording() {
        let audioFilename = getDocumentsDirectory().appendingPathComponent("newRecording.m4a")
        
        let settings = [
@@ -39,23 +43,8 @@ class SignalSource: NSObject, AVAudioRecorderDelegate {
            recorder.delegate = self
            recorder.record()
            recorder.isMeteringEnabled = true
-
        } catch {
            print("Oh no, nothing works =(")
        }
-       //can be done much better
-       OperationQueue().addOperation({[weak self] in
-       repeat {
-           self?.recorder.updateMeters()
-           self?.performSelector(onMainThread: #selector(self?.updateMeter), with: self, waitUntilDone: false)
-           Thread.sleep(forTimeInterval: 0.05) //20 FPS
-       } while (true)
-    })
-   }
-       
-   @objc func updateMeter(){
-       //should be delegated to VC
-        print(recorder.averagePower(forChannel: 0) )//in dB from -160 to 0
-        print(recorder.peakPower(forChannel: 0)) //should have casting func
    }
 }

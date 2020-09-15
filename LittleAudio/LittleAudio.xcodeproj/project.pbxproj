@@ -16,6 +16,8 @@
 		FAF1868025100E1000D38E13 /* LittleAudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF1867F25100E1000D38E13 /* LittleAudioTests.swift */; };
 		FAF1868B25100E1000D38E13 /* LittleAudioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF1868A25100E1000D38E13 /* LittleAudioUITests.swift */; };
 		FAF186992510159D00D38E13 /* SignalSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF186982510159D00D38E13 /* SignalSource.swift */; };
+		FAF1869B2511481E00D38E13 /* EnergyIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF1869A2511481E00D38E13 /* EnergyIndicator.swift */; };
+		FAF186A325114C5900D38E13 /* EnergyIndicator.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF186A225114C5900D38E13 /* EnergyIndicator.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		FAF1868A25100E1000D38E13 /* LittleAudioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleAudioUITests.swift; sourceTree = "<group>"; };
 		FAF1868C25100E1000D38E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAF186982510159D00D38E13 /* SignalSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalSource.swift; sourceTree = "<group>"; };
+		FAF1869A2511481E00D38E13 /* EnergyIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyIndicator.swift; sourceTree = "<group>"; };
+		FAF186A225114C5900D38E13 /* EnergyIndicator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnergyIndicator.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				FAF1867325100E1000D38E13 /* LaunchScreen.storyboard */,
 				FAF1867625100E1000D38E13 /* Info.plist */,
 				FAF186982510159D00D38E13 /* SignalSource.swift */,
+				FAF1869A2511481E00D38E13 /* EnergyIndicator.swift */,
+				FAF186A225114C5900D38E13 /* EnergyIndicator.xib */,
 			);
 			path = LittleAudio;
 			sourceTree = "<group>";
@@ -238,6 +244,7 @@
 				FAF1867525100E1000D38E13 /* LaunchScreen.storyboard in Resources */,
 				FAF1867225100E1000D38E13 /* Assets.xcassets in Resources */,
 				FAF1867025100E0E00D38E13 /* Main.storyboard in Resources */,
+				FAF186A325114C5900D38E13 /* EnergyIndicator.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF1869B2511481E00D38E13 /* EnergyIndicator.swift in Sources */,
 				FAF1866D25100E0E00D38E13 /* ViewController.swift in Sources */,
 				FAF186992510159D00D38E13 /* SignalSource.swift in Sources */,
 				FAF1866925100E0E00D38E13 /* AppDelegate.swift in Sources */,
