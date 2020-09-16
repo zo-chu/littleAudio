@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 
-class ViewController: UIViewController, VolumeProviderProtocol {
+class ViewController: UIViewController, EnergyProviderProtocol {
     
     let signalSource: SignalSource = SignalSource()
     var energyIndicator: EnergyIndicator?
@@ -27,7 +27,7 @@ class ViewController: UIViewController, VolumeProviderProtocol {
     func addIndicator() {
         self.signalSource.start()
 
-        energyIndicator = EnergyIndicator(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.width), volumeProvider: self)
+        energyIndicator = EnergyIndicator(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.width), energyProvider: self)
 
         self.view.addSubview(energyIndicator!)
 

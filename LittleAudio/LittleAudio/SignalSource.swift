@@ -18,9 +18,15 @@ class SignalSource: NSObject, AVAudioRecorderDelegate {
     }
 
     func getEnergyPercent() -> CGFloat {
-        let result = CGFloat(recorder.averagePower(forChannel: 0))
-        return (pow (10, (0.05 * result)))
+//        let result = CGFloat(recorder.averagePower(forChannel: 0))
+//        return (pow (10, (0.05 * result)))
         
+        //todo normilize dBs to 0-1 scale somehow better
+        return getRandomValues()
+    }
+    
+    private func getRandomValues() -> CGFloat {
+        return CGFloat(Float(arc4random()) / Float(UINT32_MAX))
     }
     
     private func getDocumentsDirectory() -> URL {

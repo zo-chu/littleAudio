@@ -13,7 +13,7 @@ class PulsingAnimation {
     let multiplier: CGFloat!
     var duration: CFTimeInterval!
     
-    let PULSE_ANIMATION_KEY = "pulseAnimation"
+    let PULSE_ANIMATION_KEY = "pulsingAnimation"
     
     init(layer: CALayer, multiplier: CGFloat, duration: CFTimeInterval = 1) {
         animatedLayer = layer

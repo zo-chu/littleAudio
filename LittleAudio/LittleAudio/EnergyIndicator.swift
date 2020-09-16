@@ -9,18 +9,17 @@
 import Foundation
 import UIKit
 
-protocol VolumeProviderProtocol {
+protocol EnergyProviderProtocol {
     func getCurrentEnergy() -> CGFloat
 }
 
 class EnergyIndicator: UIView{
-    
     var isAnimating = false
 
-    //TODO
     var pulsingAnimation: PulsingAnimation?
-    //add dynamic animation
+    var energyAnimation: EnergyAnimation?
   
+    let PULSING_MULTIPLIER : CGFloat = 0.8
     
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var energyHost: UIView!
@@ -28,10 +27,8 @@ class EnergyIndicator: UIView{
     @IBOutlet weak var iconView: UIView!
     @IBOutlet weak var icon: UIImageView!
     
-    var volumeProvider: VolumeProviderProtocol?
-    //80 or 100
-    let PULSING_MULTIPLIER : CGFloat = 0.8
-
+    var energyProvider: EnergyProviderProtocol?
+    
     // MARK: - inits
 
     override init(frame: CGRect){
@@ -39,9 +36,9 @@ class EnergyIndicator: UIView{
         commonInit()
     }
     
-    init(frame: CGRect, volumeProvider: VolumeProviderProtocol){
+    init(frame: CGRect, energyProvider: EnergyProviderProtocol){
         super.init(frame: frame)
-        self.volumeProvider = volumeProvider
+        self.energyProvider = energyProvider
         commonInit()
     }
     
@@ -79,23 +76,32 @@ class EnergyIndicator: UIView{
         isAnimating = true
 
         pulsingAnimation?.start()
-        //start energy
+        energyAnimation?.start()
     }
 
     // MARK: - setup
 
     
     func setup(){
-        //TODO
         setUpPulsingView()
-        //setup dynamic view
+        setUpEnergyView()
     }
     
     private func setUpPulsingView() {
-        //        iconView.setShadow()
         iconView.layer.cornerRadius = iconView.frame.size.width/2
         iconView.clipsToBounds = false
         iconView.backgroundColor = UIColor.blue
         pulsingAnimation = PulsingAnimation.init(layer: iconView.layer, multiplier: PULSING_MULTIPLIER)
     }
+    
+    private func setUpEnergyView(){
+        energyHost.clipsToBounds = false
+        
+        if energyProvider == nil{
+            return
+        }
+        
+        energyAnimation = EnergyAnimation(below: energyHost.layer, getEnergy: energyProvider!.getCurrentEnergy)
+    }
+    
 }

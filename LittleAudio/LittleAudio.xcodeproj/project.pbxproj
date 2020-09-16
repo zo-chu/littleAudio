@@ -19,6 +19,7 @@
 		FAF1869B2511481E00D38E13 /* EnergyIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF1869A2511481E00D38E13 /* EnergyIndicator.swift */; };
 		FAF186A325114C5900D38E13 /* EnergyIndicator.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF186A225114C5900D38E13 /* EnergyIndicator.xib */; };
 		FAF186A52511610100D38E13 /* PulsingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF186A42511610100D38E13 /* PulsingAnimation.swift */; };
+		FAF186A72512969600D38E13 /* EnergyAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF186A62512969600D38E13 /* EnergyAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		FAF1869A2511481E00D38E13 /* EnergyIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyIndicator.swift; sourceTree = "<group>"; };
 		FAF186A225114C5900D38E13 /* EnergyIndicator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnergyIndicator.xib; sourceTree = "<group>"; };
 		FAF186A42511610100D38E13 /* PulsingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsingAnimation.swift; sourceTree = "<group>"; };
+		FAF186A62512969600D38E13 /* EnergyAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				FAF1869A2511481E00D38E13 /* EnergyIndicator.swift */,
 				FAF186A225114C5900D38E13 /* EnergyIndicator.xib */,
 				FAF186A42511610100D38E13 /* PulsingAnimation.swift */,
+				FAF186A62512969600D38E13 /* EnergyAnimation.swift */,
 			);
 			path = LittleAudio;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF186A72512969600D38E13 /* EnergyAnimation.swift in Sources */,
 				FAF1869B2511481E00D38E13 /* EnergyIndicator.swift in Sources */,
 				FAF186A52511610100D38E13 /* PulsingAnimation.swift in Sources */,
 				FAF1866D25100E0E00D38E13 /* ViewController.swift in Sources */,
