@@ -1,2 +1,3 @@
 # littleAudio
-Audio Energy indicator
+
+Experimenting with CALayers and energy animations
