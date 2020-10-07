@@ -17,15 +17,15 @@ class ViewController: UIViewController, EnergyProviderProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        askForRecordingPermission()
+        addIndicator()
     }
     
     func getCurrentEnergy() -> CGFloat {
-        return signalSource.getEnergyPercent()
+        return signalSource.getAverageEnergy()
     }
     
     func addIndicator() {
-        self.signalSource.start()
+        self.signalSource.startRecording()
 
         energyIndicator = EnergyIndicator(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.width), energyProvider: self)
 
@@ -34,28 +34,5 @@ class ViewController: UIViewController, EnergyProviderProtocol {
         energyIndicator!.setup()
         energyIndicator!.startAnimating()
     }
-    
-    func askForRecordingPermission() {
-        let session: AVAudioSession = AVAudioSession.sharedInstance()
-        if (session.responds(to: #selector(AVAudioSession.requestRecordPermission(_:)))) {
-            AVAudioSession.sharedInstance().requestRecordPermission({(granted: Bool)-> Void in
-                if granted {
-                    print("granted")
-                    do {
-                        try session.setCategory(AVAudioSession.Category.playAndRecord)
-                        try session.setActive(true)
-                    }
-                    catch {
-                        print("Couldn't set  AVAudioSession category")
-                        return
-                    }
-                    self.addIndicator()
-                } else{
-                    print("permission not granted")
-                }
-            })
-        }
-    }
-   
 }
 
